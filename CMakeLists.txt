@@ -7,4 +7,7 @@ set(src_files lauxlib.h lua.h luaconf.h lualib.h
     loslib.c lparser.c lstate.c lstring.c lstrlib.c ltable.c ltablib.c ltests.c ltm.c lundump.c
     lutf8lib.c lvm.c lzio.c)
 
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /FS")
+SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /FS")
+
 add_library(lua ${src_files})
